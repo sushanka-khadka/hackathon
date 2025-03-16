@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        td{
+            border: 2px solid;
+        }
+        p{
+            font-size: larger;
+            font-weight: bolder;
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suspicious Transaction Detection</h1>
+    {{ table_html | safe }}
+    {% if status == "Fraud Transaction": %}
+        <p style="color:red">{{ status }}</p>
+    {% else %}
+        <p style="color:green">{{ status }}</p>
+    {% endif %}
+
+
+</body>
+</html>
+

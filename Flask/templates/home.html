@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Suspicious Transaction Detection</h1>
+    <form method="POST">
+        {{form}}
+        {{ form.hidden_tag() }}
+        {{form.csrf_token}}<br>
+        {{form.merchant_category.label}} {{form.merchant_category}} <br>
+        {{form.merchant_type.label}} {{form.merchant_type}} <br>
+        {{form.merchant.label}} {{form.merchant}} <br>
+        {{form.amount.label}} {{form.amount}} <br>
+        {{form.currency.label}} {{form.currency}} <br>
+        {{form.country.label}} {{form.country}} <br>
+        {{form.city.label}} {{form.city}} <br>
+        {{form.city_size.label}} {{form.city_size}} <br>
+        {{form.card_type.label}} {{form.card_type}} <br>
+        {{form.card_present}} {{form.card_present.label}} <br>
+        {{form.device.label}} {{form.device}} <br>
+        {{form.channel.label}} {{form.channel}} <br>
+        {{form.device_fingerprint.label}} {{form.device_fingerprint}} <br>
+        {{form.distance_from_home}} {{form.distance_from_home.label}} <br>
+        {{form.high_risk_merchant}} {{form.high_risk_merchant.label}} <br>
+        {{form.transaction_hour.label}} {{form.transaction_hour}} <br>
+        {{form.weekend_transaction}} {{form.weekend_transaction.label}}<br>
+        {{form.submit}}
+    </form>
+</body>
+</html>
