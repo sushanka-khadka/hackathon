@@ -49,7 +49,7 @@ class InputForm(FlaskForm):
     submit= SubmitField('Predict!!!')
 
 
-model= joblib.load('../completely new/models/model.pkl')
+model= joblib.load('../models/model.pkl')
 all_freq_map= joblib.load('../models/encoders/all_freq_map.pkl')
 ct= joblib.load('../models/encoders/col_transformer.pkl')
 sc= joblib.load('../models/encoders/scaler.pkl')
