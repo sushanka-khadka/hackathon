@@ -50,10 +50,10 @@ class InputForm(FlaskForm):
 
 
 model= joblib.load('../completely new/models/model.pkl')
-all_freq_map= joblib.load('../completely new/models/encoders/all_freq_map.pkl')
-ct= joblib.load('../completely new/models/encoders/col_transformer.pkl')
-sc= joblib.load('../completely new/models/encoders/scaler.pkl')
-feature_names= joblib.load('../completely new/models/feature_names.pkl')    # after one-hot encoded
+all_freq_map= joblib.load('../models/encoders/all_freq_map.pkl')
+ct= joblib.load('../models/encoders/col_transformer.pkl')
+sc= joblib.load('../models/encoders/scaler.pkl')
+feature_names= joblib.load('../models/feature_names.pkl')    # after one-hot encoded
 
 
 def make_prediction(pred_set_x):
